@@ -178,6 +178,13 @@ li{
     list-style-type: none;
     opacity: 1;
 }
+a{
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+
+}
 .objet-afficher{
     opacity: 0;
     height: 100vh;
