@@ -24,6 +24,9 @@ section{
     padding: 0;
     list-style-type: none;
 }
+.li-categorie{
+    opacity: 1;
+}
 
 img{
     height:50vh;
