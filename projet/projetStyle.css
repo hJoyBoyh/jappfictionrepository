@@ -16,7 +16,7 @@ section{
    
 
 }
-ul{
+.ul-categorie{
     display: flex;
     justify-content: space-around;
    align-items: center;
@@ -48,3 +48,131 @@ img{
    
 
 }
+/*logo*/
+svg{
+    height: 15vh;
+    width: 15vw;
+}
+.logo{
+    height: 10vh;
+    width: 10vw;
+    padding-top:2% ;
+    padding-left: 2%;
+}
+/*nav*/
+/*nav*/
+nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    overflow-x: hidden;
+    position: fixed;
+   
+   z-index: 5;
+   margin-top: 0;
+    
+    
+}
+/*menu transition*/
+.menu-transition{
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    position: fixed;
+}
+.menu-transition2{
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: none;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navigation{
+    opacity: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.li-nav{
+    font-size: 2.5em;
+    list-style-type: none;
+    opacity: 1;
+}
+a{
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+
+}
+.objet-afficher{
+    opacity: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: blueviolet;
+}
+
+/*menu*/
+.menu{
+    
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 20%;
+    z-index: 1000;
+   
+   
+   
+}
+.menu-titre{
+    padding-top:2% ;
+    padding-right: 2%;
+    text-align: center;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titre-menu{
+  
+    font-size: 1.5em;
+    margin: 0;
+   
+    
+}
+
+.line1,.line2,.line3 {
+   
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    margin: 10px 0;
+    transition: 0.4s;
+   
+  }
+  .change .line1 {
+    transform: translate(0, 12px) rotate(-45deg);
+  }
+  
+  .change .line2 {opacity: 0;}
+  
+  .change .line3 {
+    transform: translate(0, -12px) rotate(45deg);
+  }
+
