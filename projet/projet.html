@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./projetStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+    <link rel="stylesheet" href="../preloaderStyle.css">
     <link rel="stylesheet" href="../navTemplate.css">
     <title>Project</title>
 </head>
 <body>
+    <div class="preloader">
+        <img src="../jappfiction-highlogo-color-nobackground.png" class="preloader-img">
+    </div>
     <div id="content">
         <nav>
             <div class="menu-transition"></div>
@@ -35,7 +41,7 @@
     
       <img class="logo" src="../jappfiction-high-resolution-logo-black-on-transparent-background.png" alt="logo" >
       <div class="menu-titre">
-        <div class="menu" onclick="myFunction(this)" >
+        <div id="menu" onclick="myFunction(this)" >
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -89,5 +95,6 @@
     
  
     <script src="../navAnimation.js"></script>
+    <script src="../loader.js"></script>
 </body>
 </html>

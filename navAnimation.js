@@ -2,18 +2,37 @@ function myFunction(x) {
     x.classList.toggle("change");
   }
 
+  function disabledMenuBtn(){
+    setTimeout(() => {
+        document.querySelector("#menu").style.pointerEvents = "none";
+    }, 1000);
+   
+      
+    
+    
+    
+  }
+  
+  function enableMenuBtn(){
+   
+    document.querySelector("#menu").style.pointerEvents = "auto";
+ 
+ 
+ 
+}
 
   
 //menu
 let menuTransition = document.querySelector(".menu-transition")
 let menuTransition2 = document.querySelector(".menu-transition2")
 
-let menu = document.querySelector(".menu")
+let menu = document.querySelector("#menu")
 let menuCount = false
 
 menu.addEventListener("click",()=>{
     if(menuCount === false){
 
+        disabledMenuBtn()
     let timelienMenu = gsap.timeline();
     let timelienMenu2 = gsap.timeline();
 
@@ -45,7 +64,7 @@ menu.addEventListener("click",()=>{
         x:150,
         stagger:0.2,
         fonc:()=>{
-           
+           enableMenuBtn()
         }
     })
 
@@ -56,6 +75,7 @@ else{
     let timelienMenu = gsap.timeline();
     let timelienMenu2 = gsap.timeline();
    
+    
   
 
 
