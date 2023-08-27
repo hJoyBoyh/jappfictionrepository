@@ -12,9 +12,20 @@ section{
 
     flex-direction: column;  
     justify-content:center;
-    padding-left: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
    
 
+}
+.section-title-present{
+
+
+}
+.title-projet{
+    font-size: 3em;
+}
+p{
+    font-size: 1.2em;
 }
 .ul-categorie{
     display: flex;

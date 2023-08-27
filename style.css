@@ -33,6 +33,9 @@ span{
     font-size: 5em;
     font-family: 'Patua One', cursive;
 }
+.menu-letter-hover{
+    font-size: 1em;
+}
 #container{
     height: 100vh;
     display: flex;

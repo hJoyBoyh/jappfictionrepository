@@ -67,9 +67,50 @@ menu.addEventListener("click",()=>{
            enableMenuBtn()
         }
     })
+    timelienMenu2.from(".objet-afficher",{
+        duration:0.5,
+        opacity:0
+    })
 
     menuCount = true;
+
+    let liNavAnimation = document.querySelectorAll(".li-nav a")
     
+
+    liNavAnimation.forEach((element,idx) => {
+        console.log(element)
+        
+        element.addEventListener("mouseover", ()=>{
+            console.log("haha")
+            spanAni = gsap.timeline({})
+
+            spanAni.to(`.menu-letter-hover-${idx}`,{
+                duration:0.5,
+                color: "rgb(0, 0, 0)",
+                fontSize:60,
+                stagger : 0.2
+                
+            })
+           
+        })
+    });
+    liNavAnimation.forEach((element,idx) => {
+        console.log(element)
+    element.addEventListener("mouseout",()=>{
+        spanAni = gsap.timeline()
+
+        spanAni.to(`.menu-letter-hover-${idx}`,{
+            duration:0.5,
+            color: "rgb(255, 255, 255)",
+            
+            stagger : 0.2
+            
+        })
+
+    })
+    
+    
+});
 }
 else{
     let timelienMenu = gsap.timeline();
@@ -105,16 +146,26 @@ else{
         duration:1,
         opacity:0,
     })
+    timelienMenu2.to(".img-menu",{
+        duration:5,
+        x:300
+    })
+    timelienMenu2.from(".menu-transition2",{
+        opacity:1,
+        duration:2   
+   })
     
     timelienMenu2.to(".menu-transition2",{
          opacity:0,
          duration:0.5   
     })
+   
     timelienMenu.to(".menu-transition",{
            
         opacity:0,
         duration:0.5   
     })
+
     
    
    
@@ -130,7 +181,7 @@ else{
        
         
 
-    },3000)
+    },10000)
 
     menuCount = false;
 }
