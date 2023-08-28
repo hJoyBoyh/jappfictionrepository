@@ -594,7 +594,7 @@ form>h3{
 .btn-submit{
     padding-top: 2%;
 }
-button{}
+
 
 
 
@@ -610,9 +610,7 @@ button{}
     opacity: 0;
 }
 
-.linee-vertical{
-    
-}
+
 .arrowSetting{
     opacity: 0;
 }
