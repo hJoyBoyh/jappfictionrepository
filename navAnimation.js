@@ -9,8 +9,6 @@ function myFunction(x) {
    
       
     
-    
-    
   }
   
   function enableMenuBtn(){
@@ -147,12 +145,12 @@ else{
         opacity:0,
     })
     timelienMenu2.to(".img-menu",{
-        duration:5,
+        duration:2,
         x:300
     })
     timelienMenu2.from(".menu-transition2",{
         opacity:1,
-        duration:2   
+        duration:1   
    })
     
     timelienMenu2.to(".menu-transition2",{
@@ -164,6 +162,10 @@ else{
            
         opacity:0,
         duration:0.5   
+    })
+    timelienMenu2.to(".img-menu",{
+        duration:0.1,
+        x:0
     })
 
     
@@ -181,7 +183,7 @@ else{
        
         
 
-    },10000)
+    },7000)
 
     menuCount = false;
 }
