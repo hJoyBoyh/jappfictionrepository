@@ -2,7 +2,7 @@
 
 
 
-
+/*
 ScrollTrigger.create({
     trigger: ".content-services",
     start:"top 50%",
@@ -105,3 +105,4 @@ ScrollTrigger.create({
     
     }, 
 })
+*/

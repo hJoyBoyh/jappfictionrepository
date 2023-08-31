@@ -238,7 +238,7 @@ text-align: center;
     flex-direction:row;
     justify-content:space-around;
     align-items:center;
-    background-color: rgb(255, 253, 250);
+   /* background-color: rgb(255, 253, 250);*/
     color: rgb(14, 17, 17);;
 }
 .second-about{
