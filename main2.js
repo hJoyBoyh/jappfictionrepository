@@ -82,6 +82,9 @@ ScrollTrigger.create({
 
         let content01 = document.querySelector(".content-principal");
         let content02 = document.querySelector(".content-about");
+        let content03 = document.querySelector(".content-services");
+        let content04 = document.querySelector(".content-project");
+        let content05 = document.querySelector(".content-choose-us");
         let background = document.querySelector(".content");
         let video = document.querySelector(".video-background");
 
@@ -113,7 +116,12 @@ ScrollTrigger.create({
             video.style.opacity = 0;
 
         content01.style.display = "none"
-        content02.style.display = "block"
+        content02.style.display = "flex"
+        content03.style.display = "block"
+        content04.style.display = "block"
+        content05.style.display = "block"
+        
+        
         },2000)
 
         setTimeout(() =>{
@@ -142,6 +150,9 @@ ScrollTrigger.create({
 
         let content01 = document.querySelector(".content-principal");
         let content02 = document.querySelector(".content-about");
+        let content03 = document.querySelector(".content-services");
+        let content04 = document.querySelector(".content-project");
+        let content05 = document.querySelector(".content-choose-us");
         let background = document.querySelector(".content");
         let video = document.querySelector(".video-background");
         let logo = document.querySelector(".logo")
@@ -162,6 +173,9 @@ ScrollTrigger.create({
             video.style.opacity = 1;
         content01.style.display ="flex" 
         content02.style.display = "none"
+        content03.style.display = "none"
+        content04.style.display = "none"
+        content05.style.display = "none"
         },2000)
 
       
