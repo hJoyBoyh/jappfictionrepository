@@ -116,10 +116,250 @@ ScrollTrigger.create({
             video.style.opacity = 0;
 
         content01.style.display = "none"
-        content02.style.display = "flex"
+        content02.style.display = "block"
         content03.style.display = "block"
         content04.style.display = "block"
         content05.style.display = "block"
+
+        
+
+
+
+// background animation and menu music et logo
+
+
+ScrollTrigger.create({
+    trigger: ".content-services",
+    start:"top 50%",
+    end:'bottom 50%',
+    markers:{
+        color:"blue"
+    },
+    onEnter: ()=>{
+        let background = gsap.timeline();
+        background.add("start")
+        background.to(".content-services",{
+            backgroundColor:"rgb(14, 17, 17)"  
+        },"start")
+        background.to(".content-about",{
+            backgroundColor:"rgb(14, 17, 17)"
+        },"start")
+        // change logo and menu
+        background.to(".logo",{
+          fonc:()=>{
+            //logo
+            let logo = document.querySelector(".logo")
+            logo.src = "./logoWhiteTrans.png"
+
+            //MENU
+        let line1 = document.querySelector(".line1")
+         let line2 = document.querySelector(".line2")
+         let line3 = document.querySelector(".line3")
+
+         line1.style.backgroundColor = "#fff"
+         line2.style.backgroundColor = "#fff"
+         line3.style.backgroundColor = "#fff"
+          }
+        },"start")
+    
+    },
+    onLeave: () =>{ 
+        let background = gsap.timeline();
+        background.add("start")
+        background.to(".content-services",{
+            backgroundColor:"white"  
+        },"start")
+        background.to(".content-about",{
+            backgroundColor:"white"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./jappfiction-high-resolution-logo-black-on-transparent-background.png"
+
+        //MENU
+        let line1 = document.querySelector(".line1")
+         let line2 = document.querySelector(".line2")
+         let line3 = document.querySelector(".line3")
+
+         line1.style.backgroundColor = "rgb(14, 17, 17)"
+         line2.style.backgroundColor = "rgb(14, 17, 17)"
+         line3.style.backgroundColor = "rgb(14, 17, 17)"
+            }
+          },"start")
+        
+    }, 
+    onLeaveBack: () => { 
+        let background = gsap.timeline();
+        background.add("start")
+        background.to(".content-services",{
+            backgroundColor:"white"  
+        },"start")
+        background.to(".content-about",{
+            backgroundColor:"white"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./jappfiction-high-resolution-logo-black-on-transparent-background.png"
+
+              //MENU
+        let line1 = document.querySelector(".line1")
+        let line2 = document.querySelector(".line2")
+        let line3 = document.querySelector(".line3")
+
+        line1.style.backgroundColor = "rgb(14, 17, 17)"
+        line2.style.backgroundColor = "rgb(14, 17, 17)"
+        line3.style.backgroundColor = "rgb(14, 17, 17)"
+              
+            }
+          },"start")
+        
+    },  
+    onEnterBack: () => {
+        let background = gsap.timeline();
+        background.add("start")
+        background.to(".content-services",{
+            backgroundColor:"rgb(14, 17, 17)"  
+        },"start")
+        background.to(".content-about",{
+            backgroundColor:"rgb(14, 17, 17)"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./logoWhiteTrans.png"
+
+               //MENU
+        let line1 = document.querySelector(".line1")
+        let line2 = document.querySelector(".line2")
+        let line3 = document.querySelector(".line3")
+
+        line1.style.backgroundColor = "#fff"
+        line2.style.backgroundColor = "#fff"
+        line3.style.backgroundColor = "#fff"
+            }
+          },"start")
+    
+    }, 
+})
+
+ScrollTrigger.create({
+    trigger: ".content-project",
+    start:"top 50%",
+    end:'bottom 50%',
+    markers:true,
+    onEnter: ()=>{
+        let background = gsap.timeline();
+        background.add("start")
+        
+
+        background.to(".content-project",{
+            backgroundColor:"white"  
+        },"start")
+        background.to(".content-choose-us",{
+            backgroundColor:"white"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./jappfiction-high-resolution-logo-black-on-transparent-background.png"
+
+               //MENU
+        let line1 = document.querySelector(".line1")
+        let line2 = document.querySelector(".line2")
+        let line3 = document.querySelector(".line3")
+
+        line1.style.backgroundColor = "rgb(14, 17, 17)"
+        line2.style.backgroundColor = "rgb(14, 17, 17)"
+        line3.style.backgroundColor = "rgb(14, 17, 17)"
+            }
+          },"start")
+    
+    },
+    onLeave: () =>{ 
+        let background = gsap.timeline();
+        background.add("start")
+        background.to(".content-project",{
+            backgroundColor:"rgb(14, 17, 17)"  
+        },"start")
+        background.to(".content-choose-us",{
+            backgroundColor:"rgb(14, 17, 17)"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./logoWhiteTrans.png"
+
+               //MENU
+        let line1 = document.querySelector(".line1")
+        let line2 = document.querySelector(".line2")
+        let line3 = document.querySelector(".line3")
+
+        line1.style.backgroundColor = "#fff"
+        line2.style.backgroundColor = "#fff"
+        line3.style.backgroundColor = "#fff"
+            }
+          },"start")
+       
+    }, 
+    onLeaveBack: () => { 
+        let background = gsap.timeline();
+        background.add("start")
+      
+        background.to(".content-project",{
+            backgroundColor:"rgb(14, 17, 17)"  
+        },"start")
+        background.to(".content-choose-us",{
+            backgroundColor:"rgb(14, 17, 17)"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./logoWhiteTrans.png"
+
+               //MENU
+        let line1 = document.querySelector(".line1")
+        let line2 = document.querySelector(".line2")
+        let line3 = document.querySelector(".line3")
+
+        line1.style.backgroundColor = "#fff"
+        line2.style.backgroundColor = "#fff"
+        line3.style.backgroundColor = "#fff"
+            }
+          },"start")
+    },  
+    onEnterBack: () => {
+        let background = gsap.timeline();
+        background.add("start")
+        background.to(".content-project",{
+            backgroundColor:"white"  
+        },"start")
+        background.to(".content-choose-us",{
+            backgroundColor:"white"
+        },"start")
+        background.to(".logo",{
+            fonc:()=>{
+              let logo = document.querySelector(".logo")
+              logo.src = "./jappfiction-high-resolution-logo-black-on-transparent-background.png"
+
+               //MENU
+        let line1 = document.querySelector(".line1")
+        let line2 = document.querySelector(".line2")
+        let line3 = document.querySelector(".line3")
+
+        line1.style.backgroundColor = "rgb(14, 17, 17)"
+        line2.style.backgroundColor = "rgb(14, 17, 17)"
+        line3.style.backgroundColor = "rgb(14, 17, 17)"
+            }
+          },"start")
+        
+    
+    }, 
+})
+
+// backanimation fin
+
         
         
         },2000)
@@ -221,69 +461,4 @@ ScrollTrigger.create({
      
        
    }
-})
-/*
-  let content01 = document.querySelector(".content01");
-            let content02 = document.querySelector(".content02");
-    
-          
-            content01.style.display = "none"
-            content02.style.display = ""
-*/
-
-// backward
-
-/*
-
-tl2.to(".change",{
-   
-   
-    duration :1.5,
-    scaleX :100,
-    transformOrigin:"left",
-  
-    
-        
-})
-.to(".change",{
-    duration:1
-})
-.to(".change",{
-   
-   
-    duration :1.5,
-    scaleX :0,
-    transformOrigin:"left",
-  
-    
-        
-})
-
-ScrollTrigger.create({
-    trigger:".content01",
-    start: "90% 89%",
-   
-    toggleActions:"none none none play",
-    markers: true,
-    animation:tl2,
-    onEnter: ()=>{
-        let changer = document.querySelector(".change")
-        changer.style.display = "block"
-
-        let content01 = document.querySelector(".content01");
-        let content02 = document.querySelector(".content02");
-
-        setTimeout(()=>{
-            
-        content01.style.display = "flex"
-        content02.style.display = "none"
-        },2000)
-
-      
-
-        
-    },
-   
-   
-})
-*/
+});
