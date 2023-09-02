@@ -89,12 +89,16 @@ p{
     margin: 0;
     
 }
+.who-we-are-p{
+    opacity: 0;/*gsap*/
+}
 .who-we-are-p,.card-service-p,.card-mission-p{
     margin:0;
     font-size: 1em;
 }
-.who-we-are-h2,.our-mission-h2{
-    font-size:5em
+.who-we-are-h2,.who-we-are-h2-2,.our-mission-h2{
+    font-size:5em;
+    opacity:0; /*gsap*/
 }
 
 .who-we-are-content-1{
@@ -122,14 +126,18 @@ p{
     flex-wrap: wrap;
     width: 90vw;
 }
-.card-service,.card-mission{
+.card-service,.card-service-1,.card-mission,.card-mission-1,.card-mission-1-first,.card-mission-first{
     height:50vh;
-    width:25vw
+    width:25vw;
+    opacity : 0/*gsap*/
 }
 .card-service-title,.card-mission-title{
     font-size: 1.5em;
 }
 /*mission specific*/
+.our-mission-h2{
+    opacity: 0; /*gsap*/
+}
 .our-mission-h2,.card-mission-p,.card-mission-title{
     text-align: right
 }

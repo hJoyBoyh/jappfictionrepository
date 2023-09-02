@@ -43,17 +43,17 @@ menu.addEventListener("click",()=>{
 
       
     timelienMenu.from(".menu-transition",{
-        duration :1.5,  
+        duration :1,  
         scaleX :0,
         transformOrigin:"right",
     })
     timelienMenu2.from(".menu-transition2",{
-        duration :2,  
+        duration :1.5,  
         scaleX :0,
         transformOrigin:"right",
     })
     timelienMenu2.to(".navigation",{
-        duration:1,
+        duration:0.5,
         opacity:1,
     })
     timelienMenu2.from(".li-nav",{
@@ -141,11 +141,11 @@ else{
         
     })
     timelienMenu2.to(".navigation",{
-        duration:1,
+        duration:0.5,
         opacity:0,
     })
     timelienMenu2.to(".img-menu",{
-        duration:2,
+        duration:1.5,
         x:300
     })
     timelienMenu2.from(".menu-transition2",{

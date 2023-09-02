@@ -232,8 +232,9 @@ text-align: center;
     width:auto;
     height:auto;
    
-    background-color: rgb(255, 253, 250);
-    color: rgb(14, 17, 17);;
+ /*   background-color: rgb(255, 253, 250);*/
+ background-color: white;
+    color: rgb(14, 17, 17);
     display: none;/*gsap*/
     padding-bottom: 15%;
    flex-direction: column;
@@ -307,7 +308,8 @@ img{
     flex-direction: column;
     justify-content: center;
     color: white;
-    background-color:#131212;
+  /*  background-color:#131212;*/
+    background-color: white; /*gsap car le background est en noir lorsque quon scroll*/
     padding-bottom: 15%;
     display: none; /*gsap*/
 }
@@ -392,6 +394,7 @@ img{
     height: auto;
     width: auto;
     color: #131212;
+    background-color:rgb(14, 17, 17); /*gsap main2*/
 }
 .project-title{
     height: 100vh;

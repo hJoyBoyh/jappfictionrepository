@@ -343,7 +343,7 @@ ScrollTrigger.create({
               let logo = document.querySelector(".logo")
               logo.src = "./jappfiction-high-resolution-logo-black-on-transparent-background.png"
 
-               //MENU
+                 //MENU
         let line1 = document.querySelector(".line1")
         let line2 = document.querySelector(".line2")
         let line3 = document.querySelector(".line3")
@@ -351,6 +351,7 @@ ScrollTrigger.create({
         line1.style.backgroundColor = "rgb(14, 17, 17)"
         line2.style.backgroundColor = "rgb(14, 17, 17)"
         line3.style.backgroundColor = "rgb(14, 17, 17)"
+              
             }
           },"start")
         
@@ -462,3 +463,9 @@ ScrollTrigger.create({
        
    }
 });
+
+// text display animation
+
+ScrollTrigger.create({
+    
+})
