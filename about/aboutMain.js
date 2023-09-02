@@ -34,16 +34,10 @@ tl.from(".ligne-vertical",{
 
 //text animation 
 // 1ere content
-ScrollTrigger.create({
-    trigger:".who-we-are-content-1",
-    start:"40% 89%",
-    toggleActions:"play none none none",
-   
-    markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
+//title
+let txtAniTitle1 = gsap.timeline()
          document.querySelector(".who-we-are-h2").style.opacity = 1
-        txtAni.from(".who-we-are-h2",{
+        txtAniTitle1.from(".who-we-are-h2",{
             duration:1.5,
             y:100,
             opacity:0,
@@ -51,24 +45,22 @@ ScrollTrigger.create({
            
 
         })
-
-    }
-
-})
-
 ScrollTrigger.create({
     trigger:".who-we-are-content-1",
-    start:"65% 89%",
-    
+    start:"40% 89%",
+    toggleActions:"play none none none",
+   animation:txtAniTitle1,
     markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
+    
+})
+//text explain
+txtAnitext1 = gsap.timeline()
       let whoWeAreP = document.querySelectorAll(".who-we-are-p")
         whoWeAreP.forEach(element => {
             element.style.opacity = 1
         });
      
-        txtAni.from(".who-we-are-p",{
+        txtAnitext1.from(".who-we-are-p",{
             duration:1,
             y:100,
             opacity:0,
@@ -77,21 +69,18 @@ ScrollTrigger.create({
            
 
         })
-
-    }
-
+ScrollTrigger.create({
+    trigger:".who-we-are-content-1",
+    start:"70% 89%",
+    animation:txtAnitext1,
+    markers:true,
 })
 
 // 2e content
-ScrollTrigger.create({
-    trigger:".who-we-are-content-2",
-    start:"15% 89%",
-    end :"110% 94%",
-    markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
+// title2
+txtAniTitle2 = gsap.timeline()
          document.querySelector(".who-we-are-h2-2").style.opacity = 1
-        txtAni.from(".who-we-are-h2-2",{
+         txtAniTitle2.from(".who-we-are-h2-2",{
             duration:1.5,
             y:100,
             opacity:0,
@@ -99,25 +88,23 @@ ScrollTrigger.create({
            
 
         })
-
-    }
+ScrollTrigger.create({
+    trigger:".who-we-are-content-2",
+    start:"15% 89%",
+    end :"110% 94%",
+    markers:true,
+    animation:txtAniTitle2,
 
 })
 
-
-ScrollTrigger.create({
-    trigger:".who-we-are-content-2",
-    start:"50% 89%",
-   
-    markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
-        let cardServices = document.querySelectorAll(".card-service-1")
-        cardServices.forEach(element => {
+// card service 1
+cardServiceAni1 = gsap.timeline()
+        let cardServices1 = document.querySelectorAll(".card-service-1")
+        cardServices1.forEach(element => {
             element.style.opacity = 1
         });
        
-        txtAni.from(".card-service-1",{
+        cardServiceAni1.from(".card-service-1",{
             duration:1,
             y:100,
             opacity:0,
@@ -126,50 +113,45 @@ ScrollTrigger.create({
            
 
         })
+ScrollTrigger.create({
+    trigger:".who-we-are-content-2",
+    start:"50% 89%",
+   animation:cardServiceAni1,
+    markers:true,
+   
+})
+// card service animation
+cardServiceAni = gsap.timeline()
+let cardServices = document.querySelectorAll(".card-service")
+cardServices.forEach(element => {
+    element.style.opacity = 1
+});
 
-    }
+cardServiceAni.from(".card-service",{
+    duration:1,
+    y:100,
+    opacity:0,
+    transformOrigin:"bottom",
+    stagger:0.2
+   
 
 })
 
 ScrollTrigger.create({
     trigger:".who-we-are-content-2",
     start:"80% 89%",
-   
+   animation:cardServiceAni,
     markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
-        let cardServices = document.querySelectorAll(".card-service")
-        cardServices.forEach(element => {
-            element.style.opacity = 1
-        });
-       
-        txtAni.from(".card-service",{
-            duration:1,
-            y:100,
-            opacity:0,
-            transformOrigin:"bottom",
-            stagger:0.2
-           
-
-        })
-
-    }
-
+   
 })
 
 //3e content
-
-ScrollTrigger.create({
-    trigger:".who-we-are-content-3",
-    start:"10% 89%",
-   
-    markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
+//title
+txtAniTitle3 = gsap.timeline()
         document.querySelector(".our-mission-h2").style.opacity=1
         
        
-        txtAni.from(".our-mission-h2",{
+        txtAniTitle3 .from(".our-mission-h2",{
             duration:1.5,
             y:100,
             opacity:0,
@@ -179,78 +161,85 @@ ScrollTrigger.create({
 
         })
 
-    }
+ScrollTrigger.create({
+    trigger:".who-we-are-content-3",
+    start:"10% 89%",
+   animation:txtAniTitle3 ,
+    markers:true,
+    
 
 })
+//card mission 1
+
+cardMission1Ani = gsap.timeline()
+let cardMission1 = document.querySelectorAll(".card-mission-1")
+  cardMission1.forEach(element => {
+      element.style.opacity = 1
+  });
+document.querySelector(".card-mission-1-first").style.opacity =1
+cardMission1Ani.from(".card-mission-1-first",{
+      duration:1,
+      y:100,
+      opacity:0,
+      transformOrigin:"bottom",
+   
+     
+
+  })
+
+  cardMission1Ani.from(".card-mission-1",{
+      duration:1,
+      y:100,
+      opacity:0,
+      transformOrigin:"bottom",
+      stagger:0.2
+     
+
+  })
 
 ScrollTrigger.create({
     trigger:".who-we-are-content-3",
-    start:"65% 89%",
-    
+    start:"50% 89%",
+    animation:cardMission1Ani,
     markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
-      let cardMission = document.querySelectorAll(".card-mission-1")
-        cardMission.forEach(element => {
-            element.style.opacity = 1
-        });
-      document.querySelector(".card-mission-1-first").style.opacity =1
-        txtAni.from(".card-mission-1-first",{
-            duration:1,
-            y:100,
-            opacity:0,
-            transformOrigin:"bottom",
-         
-           
-
-        })
-
-        txtAni.from(".card-mission-1",{
-            duration:1,
-            y:100,
-            opacity:0,
-            transformOrigin:"bottom",
-            stagger:0.2
-           
-
-        })
-
-    }
+   
 
 })
+//card mission ani
+cardMissionAni = gsap.timeline()
+let cardMission = document.querySelectorAll(".card-mission")
+  cardMission.forEach(element => {
+      element.style.opacity = 1
+  });
+document.querySelector(".card-mission-first").style.opacity =1
+cardMissionAni.from(".card-mission-first",{
+      duration:1,
+      y:100,
+      opacity:0,
+      transformOrigin:"bottom",
+   
+     
+
+  })
+
+  cardMissionAni.from(".card-mission",{
+      duration:1,
+      y:100,
+      opacity:0,
+      transformOrigin:"bottom",
+      stagger:0.2
+     
+
+  })
 
 ScrollTrigger.create({
     trigger:".who-we-are-content-3",
     start:"80% 89%",
-    
+    animation:cardMissionAni ,
     markers:true,
-    onEnter:()=>{
-        txtAni = gsap.timeline()
-      let cardMission = document.querySelectorAll(".card-mission")
-        cardMission.forEach(element => {
-            element.style.opacity = 1
-        });
-      document.querySelector(".card-mission-first").style.opacity =1
-        txtAni.from(".card-mission-first",{
-            duration:1,
-            y:100,
-            opacity:0,
-            transformOrigin:"bottom",
-         
-           
-
-        })
-
-        txtAni.from(".card-mission",{
-            duration:1,
-            y:100,
-            opacity:0,
-            transformOrigin:"bottom",
-            stagger:0.2
-           
-
-        })
-
-    }
+   
 
 })
+
+//npm install smooth-scrolling
+
