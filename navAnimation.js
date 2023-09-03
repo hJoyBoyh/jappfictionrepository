@@ -146,7 +146,7 @@ else{
     })
     timelienMenu2.to(".img-menu",{
         duration:1.5,
-        x:300
+        x:"85%"
     })
     timelienMenu2.from(".menu-transition2",{
         opacity:1,
