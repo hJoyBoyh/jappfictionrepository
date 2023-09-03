@@ -69,6 +69,9 @@ ScrollTrigger.create({
    
     animation:change,
     onEnter: ()=>{
+        
+
+
         // stop user to scroll during transition
         let body = document.querySelector("body") 
         body.style.overflowY = "hidden"
@@ -120,6 +123,66 @@ ScrollTrigger.create({
         content03.style.display = "block"
         content04.style.display = "block"
         content05.style.display = "block"
+        
+        //text and title animation
+
+        //service title
+        titleServiceAni = gsap.timeline()
+document.querySelector(".service-title").style.opacity = 1
+titleServiceAni.from(".service-title",{
+    duration:1.5,
+    x:-150,
+    transformOrigin:"left",
+    opacity:0
+})
+ScrollTrigger.create({
+    trigger:".service-title",
+    start:"15% 50%",
+    animation:titleServiceAni,
+    markers:true
+})
+//-----
+// first service
+h2firstServiceAni = gsap.timeline()
+document.querySelector(".h2-service").style.opacity = 1
+h2firstServiceAni.from(".h2-service",{
+    duration:1.5,
+    x:-150,
+    transformOrigin:"left",
+    opacity:0
+})
+ScrollTrigger.create({
+    trigger:".first-service",
+    start:"-20% 45%",
+    animation:h2firstServiceAni,
+    markers:true
+})
+// img and p-service
+imgPFirstServiceAni = gsap.timeline()
+document.querySelector(".img-services-1").style.opacity = 1
+document.querySelector(".p-service-1").style.opacity=1
+imgPFirstServiceAni.add("go")
+imgPFirstServiceAni.from(".img-services-1",{
+    duration:1.5,
+    y:150,
+    transformOrigin:"bottom",
+    opacity:0
+},"go")
+imgPFirstServiceAni.from(".p-service-1",{
+    duration:1.5,
+    y:150,
+    transformOrigin:"bottom",
+    opacity:0
+
+},"go")
+ScrollTrigger.create({
+    trigger:".first-service",
+    start:"5% 45%",
+    animation:imgPFirstServiceAni,
+    markers:true
+})
+
+        
 
         
 
@@ -367,12 +430,17 @@ ScrollTrigger.create({
 
         setTimeout(() =>{
            // content about
-    change3.to(".about-title",{
-    duration :4,
-    opacity :1
+           document.querySelector(".about-title").style.opacity = 1
+    change3.from(".about-title",{
+    duration :2,
+    transformOrigin:"right",
+    opacity :0,
+    x:-150
     })
-        },5000)
+        },3000)
 
+        //
+        
       
 
         
@@ -467,5 +535,28 @@ ScrollTrigger.create({
 // text display animation
 
 ScrollTrigger.create({
-    
+
 })
+
+
+// title and texte animation gsap
+//LE METTRE AILLEUR
+/*
+ScrollTrigger.create({
+    trigger:".service-title",
+    start:"15% 50%",
+    onEnter:()=>{
+        
+titleServiceAni = gsap.timeline()
+document.querySelector(".service-title").style.opacity = 1
+titleServiceAni.from(".service-title",{
+    duration:1,
+    x:-150,
+    transformOrigin:"left",
+    opacity:0
+})
+
+    },
+    markers:true
+})
+*/

@@ -263,7 +263,7 @@ text-align: center;
     justify-content: center;
     align-items: center;
     font-size:10em;
-    opacity:0;
+    opacity:0;/*gsap*/
     height: 100vh;
     width: 100vw;
    padding-top: 5%;
@@ -324,9 +324,15 @@ img{
     height:50vh;
     width: 30vw;
 }
+.img-services-1{
+    height:50vh;
+    width: 30vw;
+    opacity: 0;/*gsap*/
+}
 .service-title{
     text-align: center;
     font-size:10em;
+    opacity: 0;/*gsap*/
     
 }
 .service-title{
@@ -339,10 +345,18 @@ img{
 .h2-service{
     font-size: 3em;
     padding-left: 30%;
-    padding-right: 20%;}
+    padding-right: 20%;
+opacity: 0/*gsap*/;}
 .p-service{
     font-size: 1em;
     padding-left: 30%;
+    
+    
+}
+.p-service-1{
+    font-size: 1em;
+    padding-left: 30%;
+    opacity: 0;/*gsap*/
     
     
 }
