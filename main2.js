@@ -125,6 +125,39 @@ ScrollTrigger.create({
         content05.style.display = "block"
         
         //text and title animation
+// what is jappfiction
+
+aboutAni = gsap.timeline()
+document.querySelector(".service-title").style.opacity = 1
+
+aboutAni.from(".first-about",{
+    duration:0.5,
+  
+    transformOrigin:"left",
+    opacity:0
+})
+aboutAni.from(".second-about",{
+    duration:1,
+  
+    transformOrigin:"left",
+    opacity:0
+})
+aboutAni.from(".third-about",{
+    duration:1,
+  
+    transformOrigin:"left",
+    opacity:0
+})
+
+
+ScrollTrigger.create({
+    trigger:".about-title",
+    start:"bottom 50%",
+    animation:aboutAni,
+    markers:true
+})
+
+
 
         //service title
         titleServiceAni = gsap.timeline()
@@ -183,7 +216,253 @@ ScrollTrigger.create({
 })
 
         
+// seconde service
+h2SecondServiceAni = gsap.timeline()
+document.querySelector(".h2-service2").style.opacity = 1
+h2SecondServiceAni.from(".h2-service2",{
+    duration:1.5,
+    x:-150,
+    transformOrigin:"left",
+    opacity:0
+})
+ScrollTrigger.create({
+    trigger:".second-service",
+    start:"-20% 45%",
+    animation:h2SecondServiceAni,
+    markers:true
+})
+// img and p-service
+imgPSecondServiceAni = gsap.timeline()
+document.querySelector(".img-services").style.opacity = 1
+document.querySelector(".p-service-2").style.opacity=1
+imgPSecondServiceAni.add("go")
+imgPSecondServiceAni.from(".img-services",{
+    duration:1.5,
+    y:150,
+    transformOrigin:"bottom",
+    opacity:0
+},"go")
+imgPSecondServiceAni.from(".p-service-2",{
+    duration:1.5,
+    y:150,
+    transformOrigin:"bottom",
+    opacity:0
 
+},"go")
+ScrollTrigger.create({
+    trigger:".second-service",
+    start:"5% 45%",
+    animation:imgPSecondServiceAni,
+    markers:true
+})
+
+        
+// third service
+h2SThirdServiceAni = gsap.timeline()
+document.querySelector(".h2-service3").style.opacity = 1
+h2SThirdServiceAni.from(".h2-service3",{
+    duration:1.5,
+    x:-150,
+    transformOrigin:"left",
+    opacity:0
+})
+ScrollTrigger.create({
+    trigger:".third-service",
+    start:"-20% 45%",
+    animation:h2SThirdServiceAni,
+    markers:true
+})
+// img and p-service
+imgPThirdServiceAni = gsap.timeline()
+document.querySelector(".img-services-3").style.opacity = 1
+document.querySelector(".p-service-3").style.opacity=1
+imgPThirdServiceAni.add("go")
+imgPThirdServiceAni.from(".img-services-3",{
+    duration:1.5,
+    y:150,
+    transformOrigin:"bottom",
+    opacity:0
+},"go")
+imgPThirdServiceAni.from(".p-service-3",{
+    duration:1.5,
+    y:150,
+    transformOrigin:"bottom",
+    opacity:0
+
+},"go")
+ScrollTrigger.create({
+    trigger:".third-service",
+    start:"5% 45%",
+    animation:imgPThirdServiceAni,
+    markers:true
+})
+
+//second content
+      //our project title
+      titleProjectAni = gsap.timeline()
+      document.querySelector(".project-title").style.opacity = 1
+      titleProjectAni.from(".project-title",{
+          duration:1.5,
+          x:-150,
+          transformOrigin:"left",
+          opacity:0
+      })
+      ScrollTrigger.create({
+          trigger:".project-title",
+          start:"15% 50%",
+          animation:titleProjectAni,
+          markers:true
+      })
+
+      //project card animation
+      projectCardAni = gsap.timeline()
+      let projectCard = document.querySelectorAll(".project-card")
+      projectCard.forEach(element => {
+        element.style.opacity=1
+      });
+      projectCardAni.add("go")
+      projectCardAni.from(".project-card",{
+        duration:1,
+        y:150,
+        transformOrigin:"bottom",
+        opacity:0,
+        stagger:0.5
+    },"go")
+    
+    projectCardAni.from(".savoirplus-about",{
+        duration:1,
+      
+        opacity:0,
+        
+    },"go")
+       
+    ScrollTrigger.create({
+        trigger:".project-title",
+        start:"bottom 50%",
+        animation:projectCardAni,
+        markers:true
+    })
+
+    //why choose us content
+      //why choose us title
+      titlChooseAni = gsap.timeline()
+      document.querySelector(".choose-us-title").style.opacity = 1
+      titlChooseAni.from(".choose-us-title",{
+          duration:1.5,
+          x:-150,
+          transformOrigin:"left",
+          opacity:0
+      })
+      ScrollTrigger.create({
+          trigger:".choose-us-title",
+          start:"15% 50%",
+          animation:titlChooseAni,
+          markers:true
+      })
+
+      //choose info 1
+      info1ChooseAni = gsap.timeline()
+      info1ChooseAni.from(".choose-us-h2",{
+        duration:1,
+        y:150,
+        transformOrigin:"bottom",
+        opacity:0
+    })
+    info1ChooseAni.from(".choose-us-p",{
+        duration:1,
+        y:150,
+        transformOrigin:"bottom",
+        opacity:0,
+        stagger:0.2
+    })
+    ScrollTrigger.create({
+        trigger:".choose-us-info-1",
+        start:"top 50%",
+        animation: info1ChooseAni,
+        markers:true
+    })
+    //choose info 2
+    info2ChooseAni = gsap.timeline()
+    info2ChooseAni.from(".choose-us-h2-2",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0
+  })
+  info2ChooseAni.from(".choose-us-p-2",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0,
+      stagger:0.2
+  })
+  
+  ScrollTrigger.create({
+      trigger:".choose-us-info-2",
+      start:"top 50%",
+      animation: info2ChooseAni,
+      markers:true
+  })
+    //choose info 3
+    info3ChooseAni = gsap.timeline()
+    info3ChooseAni.from(".choose-us-h2-3",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0
+  })
+  info3ChooseAni.from(".choose-us-p-3",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0,
+      stagger:0.2
+  })
+  
+  ScrollTrigger.create({
+      trigger:".choose-us-info-3",
+      start:"top 50%",
+      animation: info3ChooseAni,
+      markers:true
+  })
+    //choose info 4
+    info4ChooseAni = gsap.timeline()
+    info4ChooseAni.from(".choose-us-h2-4",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0
+  })
+  info4ChooseAni.from(".choose-us-p-4",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0,
+      stagger:0.2
+  })
+  
+  ScrollTrigger.create({
+      trigger:".choose-us-info-4",
+      start:"top 50%",
+      animation: info4ChooseAni,
+      markers:true
+  })
+    //choose info 5
+    info5ChooseAni = gsap.timeline()
+    info5ChooseAni.from(".final-title",{
+      duration:1,
+      y:150,
+      transformOrigin:"bottom",
+      opacity:0
+  })
+ 
+  
+  ScrollTrigger.create({
+      trigger:".choose-us-info-5",
+      start:"top 50%",
+      animation: info5ChooseAni,
+      markers:true
+  })
         
 
 

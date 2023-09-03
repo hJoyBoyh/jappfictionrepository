@@ -289,6 +289,7 @@ img{
 .savoirplus-about{
     
     text-align: center;
+   
 }
 .ligne,.ligne-blanc{
     width:115px;
@@ -324,7 +325,7 @@ img{
     height:50vh;
     width: 30vw;
 }
-.img-services-1{
+.img-services-1,.img-services-3{
     height:50vh;
     width: 30vw;
     opacity: 0;/*gsap*/
@@ -342,18 +343,13 @@ img{
     justify-content: center;
     align-items: center;
 }
-.h2-service{
+.h2-service,.h2-service2,.h2-service3{
     font-size: 3em;
     padding-left: 30%;
     padding-right: 20%;
-opacity: 0/*gsap*/;}
-.p-service{
-    font-size: 1em;
-    padding-left: 30%;
-    
-    
+    opacity: 0/*gsap*/;
 }
-.p-service-1{
+.p-service,.p-service-2,.p-service-3,.p-service-1{
     font-size: 1em;
     padding-left: 30%;
     opacity: 0;/*gsap*/
@@ -361,9 +357,11 @@ opacity: 0/*gsap*/;}
     
 }
 .p-service-2{
-    font-size: 1em;
     padding-right: 30%;
+    padding-left: 0;
 }
+
+
 .h2-service2{
    
     padding-left: 0;
@@ -419,6 +417,7 @@ opacity: 0/*gsap*/;}
     margin-bottom: 0;
     text-align: center;
     font-size:10em;
+    opacity: 0;/*gsap*/
 }
 .img-project{
     height:40vh;
@@ -450,6 +449,9 @@ opacity: 0/*gsap*/;}
     bottom:100px;
     left:60px;
     z-index: 2;
+}
+.project-card{
+    opacity: 0;/*gsap*/
 }
 
 /*content choose us*/
@@ -501,13 +503,14 @@ opacity: 0/*gsap*/;}
     align-items:center;
 }
 
-.choose-us-h2{
+.choose-us-h2,.choose-us-h2-2,.choose-us-h2-3,.choose-us-h2-4{
     font-size:2em
 }
-.choose-us-p{
+.choose-us-p,.choose-us-p-2,.choose-us-p-3,.choose-us-p-4{
     font-size: 1em;
     padding-left: 25%;
     padding-right: 25%;
+    margin: 0;
 }
 .formulaire{
     display: flex;
