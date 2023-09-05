@@ -115,7 +115,7 @@ cardServiceAni1 = gsap.timeline()
         })
 ScrollTrigger.create({
     trigger:".who-we-are-content-2",
-    start:"50% 89%",
+    start:"40% 89%",
    animation:cardServiceAni1,
     markers:true,
    
