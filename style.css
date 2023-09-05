@@ -42,7 +42,8 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+   /* background-color: black;*/
+    background-color: rgb(14, 17, 17);
     opacity: 1;
  
 }
@@ -210,6 +211,8 @@ flex-direction: column;
 align-items: center;
 height: 100vh;
 text-align: center;
+/*test*/
+background-color: rgb(14, 17, 17);
 
 }
 
