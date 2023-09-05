@@ -1,0 +1,16 @@
+/*img logo*/
+.jappimg{
+    padding-top: 2%;
+    width: 20%;
+    height: 50%;
+}
+/*footer*/
+footer{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}

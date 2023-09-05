@@ -329,12 +329,7 @@ ScrollTrigger.create({
         stagger:0.5
     },"go")
     
-    projectCardAni.from(".savoirplus-about",{
-        duration:1,
-      
-        opacity:0,
-        
-    },"go")
+   
        
     ScrollTrigger.create({
         trigger:".project-title",
