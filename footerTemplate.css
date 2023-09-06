@@ -14,3 +14,7 @@ footer{
     flex-wrap: wrap;
     padding-top: 5%;
 }
+.a-footer{
+    color: black;
+    font-size: 1em;
+}
