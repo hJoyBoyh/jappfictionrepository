@@ -171,171 +171,9 @@ p{
     height: 100%;
     width: 50%
 }
+/*
 
-@media screen and (min-width:300px){
-    
-
-
-    .about-us-title-container{
-        position: relative;
-        z-index: -5;
-        display: flex;
-        transform: rotate(-10deg);
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 80vh;
-    }
-    
-    .about-us-title >h1{
-        
-        
-        margin: 0;
-        display: inline-block;
-        font-size: 10em;
-        padding-right: 2%;
-      
-    }
-    
-    
-    
-    /*logo text*/
-    /*
-    .logo-text{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        bottom: 95%;
-    
-    }
-    h1{
-        font-size: 10em;
-        font-family: 'Patua One', cursive;
-    }
-    span{
-        font-size: 10em;
-        font-family: 'Patua One', cursive;
-    }
-    
-    
-    .title{
-        color: red;
-    }
-    .second-title{
-        background-color: red;
-    }
-    */
-    .scroll-down{
-        height: 20vh;
-        width: 97vw;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-    .ligne-vertical{
-        height: 100%;
-        width: 5px;
-        background-color: black;
-    }
-    p{
-    
-        margin: 0;
-        
-    }
-    .who-we-are-p{
-        opacity: 0;/*gsap*/
-    }
-    .who-we-are-p,.card-service-p,.card-mission-p{
-        margin:0;
-        font-size: 2em;
-        width: 80vw;
-    }
- 
-    .who-we-are-h2,.who-we-are-h2-2,.our-mission-h2{
-        font-size:3em;
-        opacity:0; /*gsap*/
-    }
-    
-    .who-we-are-content-1{
-        height:auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        padding-left: 7%;
-       
-        
-        padding-right: 7%;
-     padding-bottom:7%;
-    }
-    
-    .who-we-are-content-2,.who-we-are-content-3{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding-left: 7%;
-        
-        padding-right: 7%
-    }
-    .card-service-list,.card-mission-list{
-        display: flex;
-        flex-wrap: wrap;
-        width: 90vw;
-        flex-direction: column;
-        
-    }
-  
-    .card-service,.card-service-1,.card-mission,.card-mission-1,.card-mission-1-first,.card-mission-first{
-        height:auto;
-        width:25vw;
-        opacity : 0/*gsap*/
-    }
-    .card-service-1,.card-service{
-        height: auto;
-    }
-    .card-service-title,.card-mission-title{
-        font-size: 2.5em;
-    }
-    /*mission specific*/
-    .our-mission-h2{
-        opacity: 0; /*gsap*/
-    }
-    .our-mission-h2,.card-mission-p,.card-mission-title{
-        text-align: right
-    }
-    .card-mission-title{
-        width: 80vw;
-    }
-    .our-mission-h2{
-        padding-right: 6%;
-    }
-    .go-down{
-        position: relative;
-        top: 0vh
-    }
-    .go-up{
-        position: relative;
-        bottom: 0vh;
-    }
-    
-    
-    /*img mission*/
-    .img-mission-container{
-        display: flex;
-        justify-content:center;
-        height: 40vh;
-        
-    }
-    .img-mission{
-        height: 100%;
-        width: 50%
-    }
-}
-
-@media screen and (min-width:800px){
+@media screen and (max-width:800px){
     
 
 
@@ -390,7 +228,7 @@ p{
     .second-title{
         background-color: red;
     }
-    */
+    
     .scroll-down{
         height: 20vh;
         width: 97vw;
@@ -409,8 +247,10 @@ p{
         
     }
     .who-we-are-p{
-        opacity: 0;/*gsap*/
+        opacity: 0;
     }
+    /*gsap*/
+    /*
     .who-we-are-p,.card-service-p,.card-mission-p{
         margin:0;
         font-size: 2em;
@@ -418,10 +258,12 @@ p{
     }
  
     .who-we-are-h2,.who-we-are-h2-2,.our-mission-h2{
-        font-size:7em;
-        opacity:0; /*gsap*/
+        font-size:6em;
+        opacity:0; 
     }
     
+    /*gsap*/
+    /*
     .who-we-are-content-1{
         height:auto;
         display: flex;
@@ -454,8 +296,10 @@ p{
     .card-service,.card-service-1,.card-mission,.card-mission-1,.card-mission-1-first,.card-mission-first{
         height:auto;
         width:25vw;
-        opacity : 0/*gsap*/
+        opacity : 0
     }
+    /*gsap*/
+    /*
     .card-service-1,.card-service{
         height: auto;
     }
@@ -463,8 +307,9 @@ p{
         font-size: 2.5em;
     }
     /*mission specific*/
+    /*Gsap
     .our-mission-h2{
-        opacity: 0; /*gsap*/
+        opacity: 0; 
     }
     .our-mission-h2,.card-mission-p,.card-mission-title{
         text-align: right
@@ -486,6 +331,7 @@ p{
     
     
     /*img mission*/
+    /*
     .img-mission-container{
         display: flex;
         justify-content:center;
@@ -496,7 +342,8 @@ p{
         height: 100%;
         width: 50%
     }
-    }
+    }*/
+    /*
 
 @media screen and (min-width:1000px){
 
@@ -553,7 +400,7 @@ span{
 .second-title{
     background-color: red;
 }
-*/
+
 .scroll-down{
     height: 20vh;
     width: 97vw;
@@ -572,16 +419,20 @@ p{
     
 }
 .who-we-are-p{
-    opacity: 0;/*gsap*/
+    opacity: 0;
 }
+/*gsap*/
+/*
 .who-we-are-p,.card-service-p,.card-mission-p{
     margin:0;
     font-size: 2em;
 }
 .who-we-are-h2,.who-we-are-h2-2,.our-mission-h2{
     font-size:9em;
-    opacity:0; /*gsap*/
+    opacity:0; 
 }
+/*gsap*/
+/*
 
 .who-we-are-content-1{
     height:auto;
@@ -594,33 +445,38 @@ p{
     
     padding-right: 7%
 }
-
+*/
+/*
 .who-we-are-content-2,.who-we-are-content-3{
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    padding-left: 7%;
     
-    padding-right: 5%
+    padding-right: 7%
 }
 .card-service-list,.card-mission-list{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 90vw;
     flex-direction: row;
 }
 .card-service,.card-service-1,.card-mission,.card-mission-1,.card-mission-1-first,.card-mission-first{
     height:auto;
     width:25vw;
-    opacity : 0/*gsap*/
-}
+    opacity : 0
+}/*gsap*/
+/*
 .card-service-title,.card-mission-title{
     font-size: 2.5em;
 }
 /*mission specific*/
+/*
 .our-mission-h2{
-    opacity: 0; /*gsap*/
+    opacity: 0; 
 }
+/*gsap*/
+/*
 .our-mission-h2,.card-mission-p,.card-mission-title{
     text-align: right
 }
@@ -638,6 +494,7 @@ p{
 
 
 /*img mission*/
+/*
 .img-mission-container{
     display: flex;
     justify-content:center;
@@ -651,3 +508,4 @@ p{
 
     
 }
+*/

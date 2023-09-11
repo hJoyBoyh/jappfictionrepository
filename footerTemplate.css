@@ -18,3 +18,14 @@ footer{
     color: black;
     font-size: 1em;
 }
+
+
+@media screen and (min-width:300px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer >div >p,footer >div >h3{
+        text-align: center;
+    }
+}
