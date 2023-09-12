@@ -171,6 +171,36 @@ p{
     height: 100%;
     width: 50%
 }
+
+@media screen and (max-width:600px) and (min-width:300px){
+    /*first content*/
+    .scroll-down{
+        margin-bottom: 7%;
+    }
+    .who-we-are-content-1{
+        margin-top: 7%;
+        height: auto;
+    }
+    .who-we-are-h2{
+       
+        font-size: 3.5em;
+    }
+    .who-we-are-p{
+        font-size: 1.5em;
+    }
+    /*second content*/
+    .who-we-are-h2-2{
+       
+        font-size: 3.5em;
+    }
+    .card-service-list{
+        height: auto;
+    }
+    .card-service-1,.card-service{
+        height: auto;
+    }
+    
+}
 /*
 
 @media screen and (max-width:800px){
