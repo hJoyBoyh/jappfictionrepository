@@ -63,3 +63,18 @@ img{
 .show-text-1,.show-text-2{
     opacity: 1;
 }
+
+@media screen and (max-width:1000px) and (min-width:300px){
+  
+    
+    .ul-categorie{
+        width: 100vw;
+        flex-wrap: wrap;
+       
+        margin: 0;
+
+    }
+    .li-categorie{
+        padding: 5% 5% 5% 5%;
+    }
+}
