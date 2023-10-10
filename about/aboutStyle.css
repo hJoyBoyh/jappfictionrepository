@@ -173,9 +173,14 @@ p{
     width: 50%
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width:1000px) and (min-width:300px){
     body,html,.container,.content{
         overflow-x: hidden;
+=======
+@media screen and (max-width:300px){
+    
+>>>>>>> Stashed changes
 
     }
     body,html{
@@ -214,10 +219,39 @@ p{
         flex-direction: column;
         margin-right: 7%;
     }
+<<<<<<< Updated upstream
     .card-mission-1,.card-mission-1-first,.card-mission,.card-mission-first{
         height: auto;
         width: 90vw;
         top:0;
+=======
+    /*mission specific*/
+    .our-mission-h2{
+        opacity: 0; /*gsap*/
+    }
+    .our-mission-h2,.card-mission-p,.card-mission-title{
+        text-align: right
+    }
+   
+    .our-mission-h2{
+        padding-right: 6%;
+    }
+    .go-down{
+        position: relative;
+        top: 0vh
+    }
+    .go-up{
+        position: relative;
+        bottom: 0vh;
+    }
+    
+    
+    /*img mission*/
+    .img-mission-container{
+        display: flex;
+        justify-content:center;
+        height: 40vh;
+>>>>>>> Stashed changes
         
     }
     
@@ -305,7 +339,10 @@ p{
     .who-we-are-p,.card-service-p,.card-mission-p{
         margin:0;
         font-size: 2em;
-        width: 80vw;
+        width: 25vw;
+    }
+    .card-service-p{
+        width:80vw;
     }
  
     .who-we-are-h2,.who-we-are-h2-2,.our-mission-h2{
@@ -365,9 +402,7 @@ p{
     .our-mission-h2,.card-mission-p,.card-mission-title{
         text-align: right
     }
-    .card-mission-title{
-        width: 80vw;
-    }
+  
     .our-mission-h2{
         padding-right: 6%;
     }
@@ -513,7 +548,7 @@ p{
     flex-direction: row;
 }
 .card-service,.card-service-1,.card-mission,.card-mission-1,.card-mission-1-first,.card-mission-first{
-    height:auto;
+    height:50vh;
     width:25vw;
     opacity : 0
 }/*gsap*/
