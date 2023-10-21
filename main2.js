@@ -785,7 +785,7 @@ ScrollTrigger.create({
       
         let changer = document.querySelector(".content-change2")
         changer.style.display = "block"
-
+        window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
 
       
 
